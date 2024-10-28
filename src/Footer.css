@@ -1,53 +1,58 @@
 .footer {
+  background-color: white;
+  padding: 2rem;
+  border-top: 1px solid #eaeaea;
   display: flex;
-  justify-content: space-between; /* Distribute space between items */
-  align-items: center; /* Center items vertically */
-  padding: 20px 7rem; /* Add horizontal padding */
-  background-color: #ffffff;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer-logo {
-  height: 50px;
-  margin-right: 20px; /* Space between logo and icons */
+  height: 40px;
+  width: auto;
 }
 
 .footer-content {
   display: flex;
-  flex-direction: column; /* Stack items vertically */
-  align-items: flex-end; /* Align items to the right */
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
 }
 
 .footer-icons {
   display: flex;
-  align-items: center;
-  margin-bottom: 5px; /* Space between icons and phone number */
+  gap: 1.5rem;
 }
 
 .icon {
-  margin: 0 10px;
   font-size: 24px;
   color: #333;
+  transition: color 0.2s ease;
+}
+
+.icon:hover {
+  color: #666;
 }
 
 .footer-phone {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
   color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.2s ease;
 }
 
-/* Add responsive design */
+.footer-phone:hover {
+  color: #666;
+}
+
 @media (max-width: 768px) {
   .footer {
-    flex-direction: column; /* Stack items vertically on small screens */
-    padding: 10px 2rem; /* Adjust padding for smaller screens */
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
   }
 
   .footer-content {
-    align-items: flex-end; /* Keep icons and phone number aligned to the right */
-    margin-top: 10px; /* Add some space above on smaller screens */
-  }
-
-  .footer-icons {
-    margin-bottom: 3px; /* Adjust margin for smaller screens */
+    align-items: center;
   }
 }

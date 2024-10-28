@@ -1,10 +1,10 @@
 import React from 'react';
-import './Header.css'; // Import the CSS file for styling
+import './Header.css';
 
 const Header = () => {
   return (
     <header className="header">
-      <a href="/" className="logo-link"> {/* Make the logo clickable */}
+      <a href="/" className="logo-link">
         <img src="Logo.jpg" alt="Logo" className="logo" />
       </a>
       <nav className="nav">
