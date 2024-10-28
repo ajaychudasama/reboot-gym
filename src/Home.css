@@ -1,0 +1,50 @@
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center align items vertically */
+  padding: 40px 15rem; /* Add horizontal padding */
+  background-color: #d3d3d3;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.text-container {
+  max-width: 50%;
+  padding: 20px; /* Add padding */
+}
+
+.heading {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800; /* Make the font weight bolder */
+  font-size: 300px; /* Increase the font size */
+}
+
+.paragraph {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600; /* Increase weight for better visibility */
+  font-size: 20px; /* Increase font size */
+  margin-top: 10px;
+}
+
+.fitness-image {
+  max-width: 45%;
+  height: auto; /* Maintain aspect ratio */
+  padding: 20px; /* Add padding */
+}
+
+@media (max-width: 768px) {
+  .home {
+    padding: 40px 2rem; /* Adjust padding for smaller screens */
+    flex-direction: column; /* Stack content vertically on small screens */
+    align-items: center; /* Center align */
+  }
+
+  .text-container {
+    max-width: 100%; /* Full width on small screens */
+    text-align: left; /* Keep text aligned to the left */
+  }
+
+  .fitness-image {
+    max-width: 100%; /* Full width on small screens */
+    padding: 0; /* Remove padding for the image */
+  }
+}

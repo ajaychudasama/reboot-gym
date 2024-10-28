@@ -1,0 +1,53 @@
+.footer {
+  display: flex;
+  justify-content: space-between; /* Distribute space between items */
+  align-items: center; /* Center items vertically */
+  padding: 20px 7rem; /* Add horizontal padding */
+  background-color: #ffffff;
+}
+
+.footer-logo {
+  height: 50px;
+  margin-right: 20px; /* Space between logo and icons */
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-end; /* Align items to the right */
+}
+
+.footer-icons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px; /* Space between icons and phone number */
+}
+
+.icon {
+  margin: 0 10px;
+  font-size: 24px;
+  color: #333;
+}
+
+.footer-phone {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #333;
+}
+
+/* Add responsive design */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column; /* Stack items vertically on small screens */
+    padding: 10px 2rem; /* Adjust padding for smaller screens */
+  }
+
+  .footer-content {
+    align-items: flex-end; /* Keep icons and phone number aligned to the right */
+    margin-top: 10px; /* Add some space above on smaller screens */
+  }
+
+  .footer-icons {
+    margin-bottom: 3px; /* Adjust margin for smaller screens */
+  }
+}

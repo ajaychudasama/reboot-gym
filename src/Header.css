@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 7rem; /* Add horizontal padding */
+  background-color: #ffffff;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.logo {
+  height: 50px;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.nav-link {
+  margin: 0 15px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #333;
+  transition: color 0.3s;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 20px 2rem; /* Adjust padding for smaller screens */
+  }
+
+  .nav {
+    flex-direction: column; /* Stack nav links vertically on small screens */
+    align-items: flex-start;
+  }
+
+  .nav-link {
+    margin: 5px 0; /* Adjust margin for stacked links */
+  }
+}
